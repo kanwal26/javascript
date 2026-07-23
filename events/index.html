@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Perfumes</h1>
+    <div>
+        <ul id="images">
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqexoKAW2V7tcoLXUZy45SDaMhumorPL7IeUNOra89UQ&s=10" 
+                width= "200px"  id="p1" alt=""></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaCwluUIcW1Y-OEI-1PSJD209SQCwvduUMK254yzrEog&s=10" 
+                width= "200px" height="200" id="p2" alt=""></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCZCGY7PVp9HwZo0xJzxhd6ifCg2e9TNn2bzPCX_lyxQ&s=10" 
+                width= "200px" height="200" id="p3" alt=""></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQASjQyquyO6wWslxzLfH9qI7YFPFsCuLAZQMc6GEQxgw&s=10"
+                width= "200px" height="200" id="p4" alt=""></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrZd03kwVxMyCFtskgkiojAishxbiFF8ZT2Nw2DfvK5g&s=10" 
+                width= "200px" height="200" id="p5" alt=""></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrS38srlM6xQa7kA1P1npWaUQvuvVyYUeL-U_OclZ2tA&s=10" 
+                width= "200px" height="200" id="p6" alt=""></li>
+                <li><a href="https://www.google.com/" id="google">google link</a></li>
+        </ul>
+    </div>
+    <script>
+//       document.getElementById('images').addEventListener('click', function(e){
+//     console.log('Click inside the ul');
+// }, false);
+
+// document.getElementById('p2').addEventListener('click', function(e){
+//     console.log('Blue perfume clicked');
+// }, false);
+
+document.querySelector('#images').addEventListener('click', function(e) {
+    if (e.target.tagName === 'IMG') {
+        let rmv = e.target.parentNode;
+        rmv.remove();
+    }
+});
+    </script>
+    
+</body>
+</html>
